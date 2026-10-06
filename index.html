@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Haider Fast Food & BBQ | Malir, Karachi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#home">Haider<small>FAST FOOD & BBQ</small></a>
+<button class="burger" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav><a href="#home" data-p="home">Home</a><a href="#about" data-p="about">About us</a><a href="#book" data-p="book">Book a table</a><a href="#order" data-p="order">Order online</a></nav>
+<button class="cartbtn" onclick="openCart()" aria-label="Open cart"><span>Cart</span> <b id="cc">0</b></button>
+</div></header>
+
+<main>
+<!-- HOME -->
+<div class="page" id="p-home">
+<div class="hero"><div class="wrap">
+<div><h1>Smoky BBQ.<br><span>Crunchy</span> Fast Food.</h1>
+<p>Malir's all-you-can-eat BBQ and fast food spot. Fresh off the grill, open till 3 am. Order online or book a table for the whole gang.</p>
+<a class="btn dk" href="#order">Order now</a> <a class="btn" href="#book" style="margin-left:6px">Book a table</a></div>
+<div class="bucket"><svg viewBox="0 0 300 300" role="img" aria-label="Bucket of fried chicken illustration"><circle cx="150" cy="150" r="140" fill="#111"/><path d="M70 120h160l-18 150H88z" fill="#fff"/><path d="M96 120l12 150h-20zM150 120v150M204 120l-12 150h20z" fill="#FFC600" opacity=".0"/><g fill="#FFC600"><rect x="92" y="150" width="22" height="105" transform="skewX(6)"/><rect x="139" y="150" width="22" height="115"/><rect x="186" y="150" width="22" height="105" transform="skewX(-6)"/></g><rect x="62" y="104" width="176" height="22" rx="8" fill="#111" stroke="#FFC600" stroke-width="5"/><g fill="#d98a1c" stroke="#111" stroke-width="5"><circle cx="105" cy="85" r="30"/><circle cx="150" cy="70" r="34"/><circle cx="196" cy="85" r="30"/></g><text x="150" y="205" text-anchor="middle" font-family="Anton,Impact,sans-serif" font-size="34" fill="#111">HAIDER</text></svg></div>
+</div></div>
+<div class="stripe"><div id="mq"></div></div>
+
+<section><div class="wrap">
+<h2 class="sh">Crowd favourites</h2><p class="lead">The plates people come back for at 2 am.</p>
+<div class="grid fd" id="fav"></div>
+<p style="margin-top:28px"><a class="btn dk" href="#order">See full menu</a></p>
+</div></section>
+
+<section class="dark"><div class="wrap split">
+<div><h2 class="sh" style="color:var(--y)">All you can eat. Really.</h2><p class="lead">Bring your appetite. Our all-you-can-eat BBQ nights run on fresh charcoal, hot naan and refills that don't stop.</p><a class="btn" href="#book">Reserve your table</a></div>
+<div class="stats"><div class="stat"><b>3.9★</b>470 Google reviews</div><div class="stat"><b>3 AM</b>We close late</div><div class="stat"><b>Rs 1,000</b>Per person or less</div></div>
+</div></section>
+
+<section class="cta"><div class="wrap"><h2 class="sh">Hungry? Skip the wait.</h2><p style="margin-bottom:24px;font-size:19px;font-weight:500">Order pickup or delivery in a few taps. Pay cash.</p><a class="btn dk" href="#order">Start your order</a></div></section>
+</div>
+
+<!-- ABOUT -->
+<div class="page" id="p-about">
+<div class="pagehead"><div class="wrap"><h1>About us</h1></div></div>
+<section><div class="wrap split">
+<div><h2 class="sh">Fire, spice, and Malir.</h2>
+<p style="margin-bottom:14px">Haider Fast Food & BBQ started with one grill and one simple idea: serve hot, generous food at a fair price, all night long. Today we feed families, friends and late-night crowds across Shah Faisal Town and Bagh-e-Ibrahim Society.</p>
+<p style="margin-bottom:14px">Our chicken tikka, seekh kabab and malai boti are marinated fresh every day and cooked over charcoal. For something quicker, we serve crispy broast, zinger burgers and a hearty baked lasagna.</p>
+<p>We keep prices under Rs 1,000 a head, and we keep the kitchen open until 3 am.</p></div>
+<div class="info"><h3>Visit us</h3><ul>
+<li>D-2 Society, Gulistan-e-Rafi, Bagh-e-Ibrahim Society, Malir, Shah Faisal Town, Karachi</li>
+<li>Open daily, closes 3 am (reopens 6:30 pm)</li>
+<li>Phone: <a href="tel:03356266444">0335 6266444</a></li>
+<li>Cash only · All you can eat · Outdoor seating</li></ul>
+<p style="margin-top:16px"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Haider+Fast+Food+%26+BBQ+Malir+Karachi" target="_blank" rel="noopener">Get directions</a></p></div>
+</div></section>
+<section class="dark"><div class="wrap"><h2 class="sh" style="color:var(--y)">What we stand for</h2><p class="lead"></p>
+<div class="grid"><div class="card"><h3>Fresh every day</h3><p>Meat is marinated in-house each morning. Nothing sits around.</p></div><div class="card"><h3>Honest portions</h3><p>Generous plates and refills that match the all-you-can-eat promise.</p></div><div class="card"><h3>Fair prices</h3><p>A full meal for under Rs 1,000 a person.</p></div><div class="card"><h3>Open late</h3><p>Kitchen stays hot until 3 am, because hunger doesn't keep office hours.</p></div></div></div></section>
+</div>
+
+<!-- BOOK -->
+<div class="page" id="p-book">
+<div class="pagehead"><div class="wrap"><h1>Book a table</h1></div></div>
+<section><div class="wrap split" style="align-items:start">
+<form class="f" id="bf" novalidate>
+<label>Full name<input id="bn" autocomplete="name"></label>
+<label>Phone number<input id="bp" type="tel" inputmode="tel" placeholder="03XX XXXXXXX" autocomplete="tel"></label>
+<div class="two"><label>Date<input id="bd" type="date"></label><label>Time<input id="bt" type="time" value="20:00"></label></div>
+<label>Guests<select id="bg"></select></label>
+<label>Seating<select id="bs"><option>Outdoor</option><option>Indoor</option><option>No preference</option></select></label>
+<label>Special request (optional)<textarea id="bx" rows="3"></textarea></label>
+<div class="err" id="be"></div>
+<button class="btn dk" type="submit">Confirm booking</button>
+</form>
+<div class="info"><h3>Good to know</h3><ul><li>We hold your table for 15 minutes after your booking time.</li><li>Groups of 10+ should call <a href="tel:03356266444" style="color:var(--y)">0335 6266444</a>.</li><li>Payment is cash only at the restaurant.</li><li>We're open until 3 am, reopening at 6:30 pm.</li></ul></div>
+</div></section>
+</div>
+
+<!-- ORDER -->
+<div class="page" id="p-order">
+<div class="pagehead"><div class="wrap"><h1>Order online</h1><p style="margin-top:10px;font-weight:600">Pick your food, add to cart, check out. Cash on delivery or pickup.</p></div></div>
+<div class="tabs"><div class="wrap" id="tabs"></div></div>
+<section style="padding-top:40px"><div class="wrap" id="menu"></div></section>
+</div>
+</main>
+
+<footer><div class="wrap"><div class="g">
+<div><a class="logo" href="#home" style="display:inline-block">Haider<small>FAST FOOD & BBQ</small></a><p style="margin-top:12px;max-width:26em">D-2 Society, Gulistan-e-Rafi, Bagh-e-Ibrahim Society, Malir, Shah Faisal Town, Karachi.</p></div>
+<div><h4>Explore</h4><a href="#home">Home</a><a href="#about">About us</a><a href="#book">Book a table</a><a href="#order">Order online</a></div>
+<div><h4>Contact</h4><a href="tel:03356266444">0335 6266444</a><span>Open till 3 am</span></div>
+</div><p style="margin-top:30px;font-size:14px">© 2026 Haider Fast Food & BBQ. Website by Rayvora Studios.</p></div></footer>
+
+<div class="veil" id="veil" onclick="closeCart()"></div>
+<aside class="drawer" id="drawer" aria-label="Cart"><div class="dh"><h2>Your cart</h2><button onclick="closeCart()" aria-label="Close cart">×</button></div><div class="db" id="cb"></div>
+<div class="df"><div class="tot"><span>Subtotal</span><span id="st"></span></div><div class="tot"><span>Delivery</span><span id="dl"></span></div><div class="tot big"><span>Total</span><span id="tt"></span></div><button class="btn dk" style="width:100%;margin-top:12px" onclick="openCheckout()" id="cobtn">Checkout</button></div></aside>
+
+<div class="modal" id="cm"><div class="mb" id="cmb"></div></div>
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
